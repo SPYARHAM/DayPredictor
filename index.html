@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Predictor</title>
+    <link rel="stylesheet" href="day.css"/>
+</head>
+<body>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+
+    <div class="content">
+        <h2>Day Predictor</h2>
+		<p>Choose a Month Below</p>
+        <div class="month-group">
+            <label><input type="radio" name="month" value="January">January</label>
+			<label><input type="radio" name="month" value="February">February</label>
+			<label><input type="radio" name="month" value="March">March</label>
+			<label><input type="radio" name="month" value="April">April</label>
+			<label><input type="radio" name="month" value="May">May</label>
+			<label><input type="radio" name="month" value="June">June</label>
+			<label><input type="radio" name="month" value="July">July</label>
+			<label><input type="radio" name="month" value="August">August</label>
+			<label><input type="radio" name="month" value="September">September</label>
+			<label><input type="radio" name="month" value="October">October</label>
+			<label><input type="radio" name="month" value="November">November</label>
+			<label><input type="radio" name="month" value="December">December</label>
+        </div>
+        <div>
+			<p>Choose a Date Between 1-31</p>
+            <input type="text" id="dateInput" placeholder="Enter Date">
+        </div>
+        <h2>Click on button below</h2>
+       
+        <button onclick="generateDay()">Generate</button>
+		<p id="result"></p>	
+        <script src="day.js"></script>
+    </div>
+    </div>
+</body>
+</html>
